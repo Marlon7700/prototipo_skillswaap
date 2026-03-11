@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        primaryColor: const Color(0xFF6BCE7A),
+        primaryColor: const Color(0xFF2196F3),
       ),
       home: const LoginScreen(),
     );
@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
-  final Color primaryGreen = const Color(0xFF6BCE7A);
+  final Color primaryBlue = const Color(0xFF2196F3);
   final Color darkText = const Color(0xFF334A5F);
   final Color lightGray = const Color(0xFFF4F6F5);
 
@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 end: Alignment.bottomRight,
                 colors: [
                   Colors.white,
-                  const Color(0xFFE8F5E9).withOpacity(0.5),
+                  const Color(0xFFE3F2FD).withOpacity(0.5),
                 ],
               ),
             ),
@@ -67,14 +67,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.swap_horizontal_circle, color: primaryGreen, size: 40),
+                            Icon(Icons.swap_horizontal_circle, color: primaryBlue, size: 40),
                             const SizedBox(width: 10),
                             Text(
                               'SkillSwap',
                               style: TextStyle(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,
-                                color: primaryGreen,
+                                color: primaryBlue,
                                 letterSpacing: -0.5,
                               ),
                             ),
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () {},
                           child: Text(
                             'Forgot Password?',
-                            style: TextStyle(color: primaryGreen, fontWeight: FontWeight.w600),
+                            style: TextStyle(color: primaryBlue, fontWeight: FontWeight.w600),
                           ),
                         ),
                       ],
@@ -156,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
         obscureText: obscureText,
         decoration: InputDecoration(
           hintText: hintText,
-          prefixIcon: Icon(icon, color: primaryGreen),
+          prefixIcon: Icon(icon, color: primaryBlue),
           border: InputBorder.none,
           contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
         ),
@@ -168,7 +168,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: primaryGreen,
+        backgroundColor: primaryBlue,
         minimumSize: const Size(double.infinity, 55),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
@@ -200,10 +200,10 @@ class _LoginScreenState extends State<LoginScreen> {
       onPressed: onPressed,
       style: OutlinedButton.styleFrom(
         minimumSize: const Size(double.infinity, 55),
-        side: BorderSide(color: primaryGreen),
+        side: BorderSide(color: primaryBlue),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
-      child: Text(text, style: TextStyle(color: primaryGreen, fontWeight: FontWeight.bold)),
+      child: Text(text, style: TextStyle(color: primaryBlue, fontWeight: FontWeight.bold)),
     );
   }
 }
