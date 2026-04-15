@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "968748392183",
+    "project_id": "skillwask",
+    "storage_bucket": "skillwask.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968748392183:android:c06f4fbb8d576fa6417df2",
+        "android_client_info": {
+          "package_name": "com.example.aplicacion_skillwask",
+          "certificate_hash": ["3e30047f2ee47ebab46cead3df60aa8b097637b6"]
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968748392183-3hn4t2hsue66bp51gieuk9hn0j0dfth1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCteV4br76dlEV0wK0cOBy9AqF8xN1UfLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968748392183-3hn4t2hsue66bp51gieuk9hn0j0dfth1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
