@@ -40,9 +40,6 @@ class SkillSwapApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-<<<<<<< Updated upstream
-        primaryColor: const Color(0xFF6BCE7A),
-=======
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF6BCE7A),
           primary: const Color(0xFF6BCE7A),
@@ -51,7 +48,6 @@ class SkillSwapApp extends StatelessWidget {
         primaryColor: const Color(0xFF6BCE7A),
         scaffoldBackgroundColor: Colors.transparent,
         fontFamily: 'Arial',
->>>>>>> Stashed changes
       ),
       initialRoute: '/login',
       routes: {
@@ -77,11 +73,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late Animation<double> _scaleAnimation;
   late Animation<double> _glowAnimation;
 
-<<<<<<< Updated upstream
-  final Color primaryGreen = const Color(0xFF6BCE7A);
-  final Color darkText = const Color(0xFF334A5F);
-  final Color lightGray = const Color(0xFFF4F6F5);
-=======
   // Controladores para la animación del globo de texto
   late AnimationController _bubbleAnimationController;
   late Animation<double> _bubbleOpacityAnimation;
@@ -278,7 +269,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       }
     });
   }
->>>>>>> Stashed changes
 
   @override
   Widget build(BuildContext context) {
@@ -296,23 +286,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Scaffold(
       body: Stack(
         children: [
-<<<<<<< Updated upstream
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.white,
-                  const Color(0xFFE8F5E9).withOpacity(0.5),
-                ],
-              ),
-            ),
-=======
           // 1. FONDO
           Positioned.fill(
             child: Image.asset('assets/Fondo_SkillSwap.png', fit: BoxFit.cover),
->>>>>>> Stashed changes
           ),
 
           // 2. CONTENIDO
@@ -330,17 +306,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-<<<<<<< Updated upstream
-                            Icon(Icons.swap_horizontal_circle, color: primaryGreen, size: 40),
-                            const SizedBox(width: 10),
-                            Text(
-                              'SkillSwap',
-                              style: TextStyle(
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
-                                color: primaryGreen,
-                                letterSpacing: -0.5,
-=======
                             Container(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 15, vertical: 8),
@@ -400,7 +365,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     const Icon(Icons.keyboard_arrow_down, color: Colors.grey),
                                   ],
                                 ),
->>>>>>> Stashed changes
                               ),
                             ),
                           ],
@@ -448,16 +412,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           ],
                         ),
                         const SizedBox(height: 30),
-<<<<<<< Updated upstream
-                        _buildGoogleButton(),
-                        const SizedBox(height: 20),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Forgot Password?',
-                            style: TextStyle(color: primaryGreen, fontWeight: FontWeight.w600),
-                          ),
-=======
 
                         _buildFindMatchButton(primaryGreen),
                         const SizedBox(height: 40),
@@ -516,7 +470,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               },
                             );
                           },
->>>>>>> Stashed changes
                         ),
                         const SizedBox(height: 30),
                         const SizedBox(height: 10),
@@ -604,44 +557,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10)
         ],
       ),
-<<<<<<< Updated upstream
-      child: TextField(
-        controller: controller,
-        obscureText: obscureText,
-        decoration: InputDecoration(
-          hintText: hintText,
-          prefixIcon: Icon(icon, color: primaryGreen),
-          border: InputBorder.none,
-          contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildPrimaryButton(String text, VoidCallback onPressed) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: primaryGreen,
-        minimumSize: const Size(double.infinity, 55),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      ),
-      child: Text(text, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-    );
-  }
-
-  Widget _buildGoogleButton() {
-    return OutlinedButton(
-      onPressed: () {},
-      style: OutlinedButton.styleFrom(
-        minimumSize: const Size(double.infinity, 55),
-        side: BorderSide(color: Colors.grey.shade300),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      ),
-      child: Row(
-=======
       child: Column(
->>>>>>> Stashed changes
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
@@ -666,17 +582,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     );
   }
 
-<<<<<<< Updated upstream
-  Widget _buildSecondaryButton(String text, VoidCallback onPressed) {
-    return OutlinedButton(
-      onPressed: onPressed,
-      style: OutlinedButton.styleFrom(
-        minimumSize: const Size(double.infinity, 55),
-        side: BorderSide(color: primaryGreen),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      ),
-      child: Text(text, style: TextStyle(color: primaryGreen, fontWeight: FontWeight.bold)),
-=======
   Widget _buildNeedCard() {
     return Container(
       height: 200,
@@ -874,7 +779,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           );
         },
       ),
->>>>>>> Stashed changes
     );
   }
 }
